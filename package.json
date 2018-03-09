@@ -1,0 +1,28 @@
+{
+  "name": "dataprice_sam",
+  "version": "1.0.0",
+  "description": "\"# dataprice_sam\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loosamza/dataprice_sam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loosamza/dataprice_sam/issues"
+  },
+  "homepage": "https://github.com/loosamza/dataprice_sam#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-aria": "^1.6.9",
+    "angular-material": "^1.1.7",
+    "angular-messages": "^1.6.9",
+    "angular-resource": "^1.6.9",
+    "angular-sanitize": "^1.6.9"
+  }
+}
