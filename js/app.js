@@ -33,6 +33,7 @@ app.factory('bxFactory', function ($http) {
 app.controller('mainController', function (bxFactory, $scope, $window) {
 
     $scope.marketDataList = [];
+    $scope.orderBook = {};
     //Your $http request
     bxFactory.getMarketData().then(function (response) {
         // console.log(response.data);
@@ -41,8 +42,18 @@ app.controller('mainController', function (bxFactory, $scope, $window) {
                 $scope.marketDataList.push(response.data[key]);
             }
         }
+
+        $scope.marketDataList.forEach(function (value) {
+            bxFactory.getOrderBook(value.pairing_id).then(function (currencyRes) {
+                $scope.orderBook[value.secondary_currency] = [];
+                $scope.orderBook[value.secondary_currency].push(currencyRes.data);
+
+            })
+        });
         console.log($scope.marketDataList);
+        console.log($scope.orderBook);
     });
+
 
     console.log('mainController');
 });
