@@ -22,8 +22,11 @@
     "angular-aria": "^1.6.9",
     "angular-material": "^1.1.7",
     "angular-material-data-table": "^0.10.10",
+    "angular-material-icons": "^0.7.1",
     "angular-messages": "^1.6.9",
     "angular-resource": "^1.6.9",
-    "angular-sanitize": "^1.6.9"
+    "angular-sanitize": "^1.6.9",
+    "lodash": "^4.17.5",
+    "md-data-table": "^2.2.0"
   }
 }
